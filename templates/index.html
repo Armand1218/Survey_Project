@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Add User</title>
+</head>
+<body>
+    <form action="/process" method="post" class="p-5 rounded col-6 mx-auto">
+        <h1>Dojo Survey</h1>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" name="name" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="location">Dojo Location:</label>
+            <select name="location"  class="form-control">
+                <option value=""></option>
+                <option value="Las Vegas">Las Vegas</option>
+                <option value="Seattle">Seattle</option>
+                <option value="New York">New York</option>
+                <option value="Los Angeles">Los Angeles</option>
+                <option value="Online">Online</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="language">Favorite Language:</label>
+            <select name="language" class="form-control">
+                <option value=""></option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="Java Script">Java Script</option>
+                <option value="python">Python</option>
+                <option value="JS">JS</option>
+                <option value="c++">C++</option>
+                <option value="Mern">Mern</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="comments">Comments(optional):</label>
+            <textarea name="comments" cols="30" rows="10" class="form-control"></textarea>
+        </div>
+        <input type="submit" value="submit" class="btn btn-primary">
+    </form>
+</body>
+</html>
